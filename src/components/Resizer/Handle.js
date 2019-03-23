@@ -27,11 +27,11 @@ class Handle extends Component {
 		let newHeight = this.initialHeight;
 
 		if (resizeHorizontal) {
-			newWidth = this.initialWidth + (event.pageX - this.dragStartMouseX);
+            newWidth = this.getUpdatedWidth(this.initialWidth, event.pageX, this.dragStartMouseX);
 		}
 
 		if (resizeVertical) {
-			newHeight = this.initialHeight + (event.pageY - this.dragStartMouseY);
+            newHeight = this.getUpdatedHeight(this.initialHeight, event.pageY, this.dragStartMouseY);
 		}
 
 		if ((minHeight && newHeight < minHeight) || (maxHeight && newHeight > maxHeight)) {
@@ -42,7 +42,13 @@ class Handle extends Component {
 		}
 		this.props.onChange(newHeight, newWidth);
 		event.preventDefault();
-	}
+    }
+    getUpdatedWidth = (initialWidth, currentPageX, dragStartMouseX) => {
+        return initialWidth + (currentPageX - dragStartMouseX)
+    }
+    getUpdatedHeight = (initialHeight, currentPageY, dragStartMouseY) => {
+        return initialHeight + (currentPageY - dragStartMouseY);
+    }
 	stopResize = () => {
 		this.moveListener = null;
 		this.mouseUpListener = null;
@@ -102,5 +108,10 @@ Handle.propTypes = {
 	maxWidth: PropTypes.number,
 	/** Maximum height of the children of Resizer component in pixels */
 	maxHeight: PropTypes.number
+};
+
+Handle.defaultProps = {
+	resizeVertical: false,
+	resizeHorizontal: false,
 };
 export default Handle;

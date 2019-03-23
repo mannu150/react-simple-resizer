@@ -78,7 +78,8 @@
 		],
 		"resolver": "jest-pnp-resolver",
 		"setupFiles": [
-			"react-app-polyfill/jsdom"
+			"react-app-polyfill/jsdom",
+			"<rootDir>/src/setupTests.js"
 		],
 		"testMatch": [
 			"<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
@@ -123,8 +124,11 @@
 	},
 	"devDependencies": {
 		"chokidar": "^1.6.1",
+		"enzyme": "^3.9.0",
+		"enzyme-adapter-react-16": "^1.11.2",
 		"npm-run-all": "^4.0.2",
 		"prop-types": "^15.7.2",
-		"react-docgen": "^2.14.0"
+		"react-docgen": "^2.14.0",
+		"react-test-renderer": "^15.5.4"
 	}
 }
