@@ -23,5 +23,7 @@ npm t
 ## Docs/Demo on how to use this lib by code samples
 [Component documentation](https://mannu150.github.io/react-simple-resizer/)
 
-## Future Tasks => Publish to Npm
+## Future Tasks
+1. Publish to npm
+2. Restrict no of children to Resizer to 1
   
