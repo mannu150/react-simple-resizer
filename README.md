@@ -5,7 +5,7 @@ A library for resizing a child element either vertically or horizontally or both
 
 ## Install
 ```
-npm install ps-react
+npm install react-simple-resizer
 ```
 
 
