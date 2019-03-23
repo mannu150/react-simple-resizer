@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Handle from './Handle';
 
+/** Resizer component which resizes its children  horizontally or vertically. */
 class Resizer extends Component {
 	constructor(props) {
 		super(props);

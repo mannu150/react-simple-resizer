@@ -18,11 +18,11 @@ const Props = ({props}) => {
 				Object.keys(props).map(key => {
 					return (
 					<tr key={key}>
-						<td>{key}</td>
-						<td>{props[key].description}</td>
-						<td>{props[key].type.name}</td>
-						<td>{props[key].defaultValue && props[key].defaultValue.value}</td>
-						<td>{props[key].required && "Yes"}</td>
+						<td width="20%">{key}</td>
+						<td width="50%">{props[key].description}</td>
+						<td width="10%">{props[key].type.name}</td>
+						<td width="10%">{props[key].defaultValue && props[key].defaultValue.value}</td>
+						<td width="10%">{props[key].required && "X"}</td>
 					</tr>
 					);
 				})
