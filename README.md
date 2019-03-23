@@ -15,5 +15,10 @@ npm start
 npm run deploy:docs
 ```
 
+## To run unit tests 
+```
+npm t
+```
+
 ## Docs/Demo on how to use this lib by code samples
 [Component documentation](https://mannu150.github.io/react-simple-resizer/)
