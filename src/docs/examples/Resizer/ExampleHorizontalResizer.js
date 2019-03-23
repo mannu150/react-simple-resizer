@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Resizer from 'react-simple-resizer/Resizer';
 
-/**  Resizer with maxWith and minWIdth Constraint and resize Horizontal **/
+/**  Resizer with maxWidth and minWIdth Constraint and resize Horizontal **/
 class ExampleHorizontalResizer extends Component {
 	render() {
 
