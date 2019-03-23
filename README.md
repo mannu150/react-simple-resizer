@@ -10,4 +10,4 @@ npm install ps-react
 
 
 ## Docs/Demo
-[Component documentation](http://mannu150.github.io/react-simple-resize)
+[Component documentation](https://mannu150.github.io/react-simple-resizer/)
