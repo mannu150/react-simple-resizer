@@ -22,3 +22,6 @@ npm t
 
 ## Docs/Demo on how to use this lib by code samples
 [Component documentation](https://mannu150.github.io/react-simple-resizer/)
+
+## Future Tasks => Publish to Npm
+  
